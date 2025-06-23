@@ -8,5 +8,9 @@ router.put('/:id', (req, res) => {
     const PostsId = req.params.id;
     res.send(`Post with ID: ${PostsId}`);
 })
+router.get('/:id', (req, res) => {
+    const PostsId = req.params.id;
+    res.send(`Post with ID: ${PostsId}`);
+});
 
 module.exports = router;
